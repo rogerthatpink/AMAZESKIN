@@ -19,10 +19,20 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
-            display: ['Outfit', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Montserrat', 'system-ui', 'sans-serif'],
           },
           colors: {
+            pastel: {
+              teal: '#a8e6cf',
+              pink: '#ffd3e0',
+              ivory: '#fff9e6',
+            },
+            dark: {
+              background: '#1a1a1a',
+              surface: '#2b2b2b',
+              text: '#e5e5e5',
+            },
             brand: {
               50: '#fff1f2',
               100: '#ffe4e6',
@@ -213,11 +223,7 @@
         </div>
 
         <!-- Multi-Agent Operations Pill -->
-        <button onclick="openAgentModal()" class="px-3 sm:px-4 py-2 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm hover:scale-105 active:scale-95">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span class="hidden sm:inline">Agent Board (6)</span>
-          <span class="sm:hidden">Agents</span>
-        </button>
+        
 
         <!-- 1-Minute Quiz Pill -->
         <button onclick="openQuizModal()" class="px-3 sm:px-4 py-2 rounded-full bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-bold transition-all flex items-center gap-1.5 shadow-2xs hover:scale-105 active:scale-95">
